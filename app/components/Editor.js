@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, WebView, Text } from 'react-native';
+import WKWebView from 'react-native-wkwebview-reborn';
 
 class Editor extends Component {
 
@@ -9,7 +10,7 @@ class Editor extends Component {
                 <Text style={{ marginBottom: 20, fontSize: 16, textAlign: 'center', paddingVertical: 10, fontWeight: 'bold', color: '#ffffff', backgroundColor: "#23afff"}}>
                     Slate Editor In WebView
                 </Text>
-                <WebView
+                <WKWebView
                    style={{ padding: 10 }}
                    source={{ uri: 'index.html' }}
                    bounces={false}
